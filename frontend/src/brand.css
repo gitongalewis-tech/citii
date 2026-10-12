@@ -1,0 +1,134 @@
+:root {
+  --forest: #bd203b;
+  --green: #a51b34;
+  --mint: #f9e8ec;
+}
+
+.logoMark {
+  display: block;
+  color: inherit;
+}
+
+.logoMark img {
+  display: block;
+  width: 150px;
+  height: auto;
+}
+
+.loginTop .logoMark img {
+  width: 165px;
+}
+
+.photoBrand .logoMark {
+  padding: 5px 8px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.photoBrand .logoMark img {
+  width: 155px;
+}
+
+.loginPhoto {
+  background-image:
+    linear-gradient(0deg, rgba(47, 14, 22, .84), rgba(49, 16, 24, .12) 60%),
+    linear-gradient(90deg, rgba(31, 9, 15, .45), transparent),
+    url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85');
+}
+
+.eyebrow {
+  color: #ad203a;
+}
+
+.photoCaption .eyebrow {
+  color: #ffd0d9;
+}
+
+.photoBrand > span {
+  color: #f3dce0;
+}
+
+.photoFoot i {
+  background: #cf2947;
+}
+
+.loginForm input:focus {
+  border-color: #c8465d;
+  box-shadow: 0 0 0 3px #f8e6ea;
+}
+
+.primaryBtn {
+  background: var(--forest);
+  box-shadow: 0 4px 10px rgba(147, 25, 49, .14);
+}
+
+.primaryBtn:hover {
+  background: #a71934;
+}
+
+.outlineBtn {
+  color: #a51b34;
+}
+
+.outlineBtn:hover {
+  background: #fff6f7;
+}
+
+.workspaceMark {
+  background: var(--forest);
+  color: #fff;
+}
+
+.navItem.selected {
+  background: #f9e8ec;
+  color: #a51b34;
+}
+
+.navCount,
+.unreadDot {
+  background: #bd203b;
+}
+
+.headingTotal {
+  background: #f9e8ec;
+  color: #a51b34;
+}
+
+.listTabs button.active {
+  color: #a51b34;
+}
+
+.listTabs button.active::after {
+  background: #bd203b;
+}
+
+.threadRow.threadActive {
+  background: #fff6f7;
+  box-shadow: inset 2px 0 #bd203b;
+}
+
+.chatContext b,
+.chatContext button {
+  color: #a51b34;
+}
+
+.contextIcon,
+.emptyIcon,
+.viewingIcon {
+  background: #f9e8ec;
+  color: #ad203a;
+}
+
+.propertyInfo > b {
+  color: #a51b34;
+}
+
+.toast {
+  background: #9f1c34;
+}
+
+.avatarYou,
+.avatarTop {
+  background: #f9e8ec;
+  color: #a51b34;
+}

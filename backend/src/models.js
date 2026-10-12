@@ -1,0 +1,7 @@
+import mongoose from 'mongoose';
+const { Schema, model } = mongoose;
+export const Contact = model('Contact', new Schema({ phone: { type: String, unique: true }, name: String, waId: String }, { timestamps: true }));
+export const Conversation = model('Conversation', new Schema({ phone: { type: String, index: true }, contactName: String, status: { type: String, default: 'open' }, humanTakeover: { type: Boolean, default: false }, assignedTo: String, unread: { type: Number, default: 0 }, lastMessage: String, lastMessageAt: { type: Date, default: Date.now }, intent: String, flow: String }, { timestamps: true }));
+export const Message = model('Message', new Schema({ conversationId: { type: Schema.Types.ObjectId, ref: 'Conversation', index: true }, direction: String, text: String, sender: String, externalId: String, status: String }, { timestamps: true }));
+export const Property = model('Property', new Schema({ wpId: { type: Number, unique: true }, title: String, price: String, location: String, type: String, status: String, bedrooms: Number, bathrooms: Number, image: String, url: String, excerpt: String }, { timestamps: true }));
+export const ViewingRequest = model('ViewingRequest', new Schema({ conversationId: Schema.Types.ObjectId, phone: String, propertyTitle: String, preferredDate: String, preferredTime: String, name: String, notes: String, status: { type: String, default: 'pending' } }, { timestamps: true }));
